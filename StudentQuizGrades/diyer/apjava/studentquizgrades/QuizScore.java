@@ -3,25 +3,34 @@ package diyer.apjava.studentquizgrades;
 public class QuizScore{
 	private String name;
 	private float percentScore;
+	private int id;
 	
 	public QuizScore(String aName, float aScore){
 		name = aName;
 		percentScore = aScore;
 	}
-	
-	public String getName(){
+
+	public String getName() {
 		return name;
 	}
-	
-	public float getScore(){
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public float getPercentScore() {
 		return percentScore;
 	}
-	
-	public void setName(String quizName){
-		name = quizName;
+
+	public void setPercentScore(float percentScore) {
+		this.percentScore = percentScore;
 	}
-	
-	public void setScore(String quizName){
-		name = quizName;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 }
